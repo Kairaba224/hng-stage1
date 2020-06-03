@@ -1,0 +1,217 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" integrity="sha256-CuUPKpitgFmSNQuPDL5cEfPOOJT/+bwUlhfumDJ9CI4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./template.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js" integrity="sha256-NP9NujdEzS5m4ZxvNqkcbxyHB0dTRy9hG13RwTVBGwo=" crossorigin="anonymous"></script>
+    <script src="./template.js"></script>
+
+    <title>Search Page</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header d-flex justify-content-between">
+            <div class="sidepanel row" id="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="first-filter filter-content">
+                    <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Language
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item">
+                                <input type="radio" name="Action" id="french">
+                                <label for="action">Français</label>
+                            </div>
+                            <div class="dropdown-item">
+                                <input type="radio" name="Action" id="english">
+                                <label for="action">English</label>
+                            </div>
+                            <div class="dropdown-item">
+                                <input type="radio" name="Action" id="other">
+                                <label for="action">Autre</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-filter filter-content">
+                    <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Content Type
+                        </button>
+                        <div class="dropdown-menu" style="width: max-content; height: min-content; margin-top: 10px" aria-labelledby="dropdownMenuButton">
+                            <p style="margin-left: 10px;">Choice your content Type !</p>
+                            <button class="item">Item</button>
+                            <button class="item">Item Item Item</button>
+                            <button class="item">Item Item</button>
+                            <button class="item">Item</button>
+                            <button class="item">Item</button> <br>
+                            <button class="item">Item</button>
+                            <button class="item">Item Item Item</button>
+                            <button class="item">Item Item</button>
+                            <button class="item">Item</button>
+                            <button class="item">Item</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-filter filter-content">
+                    <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </button>
+                        <div class="dropdown-menu row" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-item">
+                                <input type="checkbox" name="Action" id="action1">
+                                <label for="action1">Action 1</label>
+                            </div>
+                            <div class="dropdown-item">
+                                <input type="checkbox" name="Action" id="action2">
+                                <label for="action1">Action 2</label>
+                            </div>
+                            <div class="dropdown-item">
+                                <input type="checkbox" name="Action" id="action3">
+                                <label for="action1">Action 3</label>
+                            </div>
+                            <div class="dropdown-item">
+                                <input type="checkbox" name="Action" id="action4">
+                                <label for="action1">Action 4</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter" id="filter">
+                <button class="btn btn-white openbtn" onclick="openNav()"><i class="fas fa-filter"></i><span>Filter</span></button>
+            </div>
+
+        </div>
+        <div class="page-body">
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-top row">
+                            <img class="card-img-top col-md-4" src="images\img_2.png" alt="Card image cap">
+                            <div class="card-body col-md-8">
+                                <h6 style="margin-top: -20px;">Type 1</h6>
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below
+                                    as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-white">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card ">
+                        <div class="card-top row">
+                            <img class="card-img-top col-md-4" src="images\img_5.png" alt="Card image cap">
+                            <div class="card-body col-md-8">
+                                <h6 style="margin-top: -20px;">Type 2</h6>
+                                <h5 class="card-title">Title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below
+                                    as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <small class="text-white">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-top row">
+                            <img class="card-img-top col-md-4" src="images\img_6.png" alt="Card image cap">
+                            <div class="card-body col-md-8">
+                                <h6 style="margin-top: -20px;">Type 3</h6>
+                                <h5 class="card-title">Title Title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below
+                                    as a natural lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to additional content. This is a wider card with supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <small class="text-white">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>
